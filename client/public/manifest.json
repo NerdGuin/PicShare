@@ -1,0 +1,8 @@
+{
+  "name": "PicShare",
+  "short_name": "PicShare",
+  "description": "O melhor lugar para descobrir e compartilhar visuais incríveis.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone"
+}

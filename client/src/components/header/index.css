@@ -1,0 +1,125 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: var(--header);
+  height: 88px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.logo-text {
+  font-family: 'MiSans-Bold';
+  font-size: 22px;
+  color: #007bff;
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 1024px) {
+  .search-bar {
+    display: flex !important;
+  }
+}
+
+.search-bar {
+  display: none;
+  flex: 1;
+  max-width: 800px;
+  margin: 0 40px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid transparent;
+  padding: 0 20px 0 52px;
+  font-size: 16px;
+  font-family: 'MiSans-Regular';
+  background-color: #f1f1f1;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.search-input:focus {
+  background-color: #ffffff;
+  border-color: #d1d1d1;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #767676;
+  font-size: 20px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #5f5f5f;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  background-image: url('../../assets/images/avatar-m.png');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .user-avatar:hover + .icon-btn {
+    background-color: #f0f0f0;
+  }
+}
+
+@media (hover: none) {
+  .user-avatar:active + .icon-btn {
+    background-color: #f0f0f0;
+  }
+}

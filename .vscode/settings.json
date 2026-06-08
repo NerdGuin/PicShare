@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    ".vscode": true,
+    ".gitignore": true,
+    "*/package*": true,
+    "*/node_modules": true,
+
+    "client/tsconfig*": true,
+    "client/eslint*": true,
+    "client/vite*": true,
+    "client/vercel*": true
+  },
+  "prettier.singleQuote": true,
+  "gitdoc.enabled": false
+}

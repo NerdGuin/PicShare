@@ -1,0 +1,76 @@
+/* Base Styles */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: 'MiSans-Regular', sans-serif;
+  background-color: var(--background);
+  color: var(--color);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Themes */
+:root {
+  --header: #ffffff;
+
+  --color: #1f1f1f;
+  --background: #ffffff;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --header: #ffffff;
+
+    --color: #1f1f1f;
+    --background: #ffffff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header: #000000;
+
+    --color: #ffffff;
+    --background: #1f1f1f;
+  }
+} */
+
+/* Fonts */
+@font-face {
+  font-family: 'MiSans-Regular';
+  src: url('./assets/fonts/misans/MiSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'MiSans-Bold';
+  src: url('./assets/fonts/misans/MiSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'AlibabaSans-Medium';
+  src: url('./assets/fonts/alibaba-sans/AlibabaSans-Medium.otf');
+}
+
+/* Base Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
